@@ -1,3 +1,7 @@
+//finished the BACKEND
+//but it is important to check for the expressJWT algorithm and token in sign in and sign out
+//rather than this this project is DONE until now :) moving to the front-end
+
 const express = require("express");
 const morgan = require("morgan");
 
