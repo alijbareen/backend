@@ -47,3 +47,13 @@ exports.signin = (req, res) => {
     return res.json({ token, user });
   });
 };
+
+exports.signout = (req, res) => {
+  res.clearCookie("token");
+  res.json({ message: "Signout Success" });
+};
+
+exports.requireSignin = expressJwt({
+  secret: process.env.JWT_SECRET,
+  algorithms: ["RS256"],
+});
