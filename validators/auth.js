@@ -5,3 +5,8 @@ exports.userSignupValidator = [
   check("email").isEmail().withMessage("Must be a Valid Email"),
   check("password").isLength(6).withMessage("Must be a Valid Pass"),
 ];
+
+exports.userSigninValidator = [
+  check("email").isEmail().withMessage("Must be a Valid Email"),
+  check("password").isLength(6).withMessage("Must be a Valid Pass"),
+];
